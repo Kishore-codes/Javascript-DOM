@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="first">First child</p>
+        <p id="second">second CHild</p>
+        <p>iam last child</p>        
+    </div>
+    <script>
+        let kishore={
+            age:22,
+            working:false
+        }
+        var nodes=document.getElementById("parent").children[2];
+        var secondChild=document.getElementById("second");
+        //console.log(secondChild.nextElementSibling)
+
+        // adding new element
+        var addElement=document.createElement("h1").innerHTML=kishore.working;       
+        console.log(addElement)
+
+        var childElement=document.getElementById("parent")
+        childElement.append(addElement)
+    </script>
+</body>
+</html>

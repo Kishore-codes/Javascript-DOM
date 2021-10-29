@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p class="develop">hi devloper</p>
+    <p class="develop">hi enginer</p>
+    <p class="develop">hi coding master</p>
+    <button id="pop">Click</button> -->
+
+    <div style="border: 1px solid gray; width: 500px;">
+        <p style="border: 1px solid gray; width: 100px;margin:1rem">Hiii</p>
+    </div>
+
+    <script>
+        var who=document.getElementById("pop");
+        who.addEventListener("click",()=>{
+            var job=document.getElementsByTagName("p")
+            job[1].innerHTML="Software Engineer"
+
+        })
+    </script>
+    
+</body>
+</html>
